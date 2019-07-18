@@ -63,14 +63,58 @@ html {
 html, body {
 	height: 100%;
 }
-@main-font: 'Nunito', sans-serif;
 
-@lighter-color: #E8F7EE;
-@light-color: #D5DDBC;
-@med-color: #798086;
-@dark-color: #4B4E6D;
+@main-font:'Nunito', sans-serif;
+@lighter-color:#E8F7EE;
+@light-color:#D5DDBC;
+@med-color:#798086;
+@dark-color:#4B4E6D;
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.border(){
+	border: 1px solid @dark-color;
+}
 	
-}
-html {
+html{
 	font-family: @main-font;
+	font-size: 62.5%;
+	color: #4B4E6D;
 }
+h1{
+	font-size: 4rem;
+}
+.container {
+	background: #E8F7EE;
+	width: 900px;
+	margin: 0 auto;
+	.border();
+  .header-wrapper {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column wrap;
+	border: 1px solid red;
+	} //closes header wrapper//
+  nav {
+	width: 90%;
+	padding: 10px;
+	margin: 0 5px 10px 0;
+	display: flex;
+	justify-content: flex-end;
+	border: 1px solid green;
+  a {
+	  text-decoration: none;
+  }
+  } //closes nav //
+  
+	@media(max-width:800px) {
+		width: 90%;
+	}
+	@media(max-width:500px) {
+		width: 90%;
+	}
+}  //closes container//
+

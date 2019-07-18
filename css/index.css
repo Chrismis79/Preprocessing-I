@@ -142,3 +142,45 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  color: #4B4E6D;
+}
+h1 {
+  font-size: 4rem;
+}
+.container {
+  background: #E8F7EE;
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid #4B4E6D;
+}
+.container .header-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid red;
+}
+.container nav {
+  width: 90%;
+  padding: 10px;
+  margin: 0 5px 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid green;
+}
+.container nav a {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
