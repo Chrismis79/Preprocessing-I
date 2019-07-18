@@ -77,6 +77,10 @@ html, body {
 .border(){
 	border: 1px solid @dark-color;
 }
+.width-margin(){
+	width: 85%;
+	margin: 0 auto;
+}
 	
 html{
 	font-family: @main-font;
@@ -92,14 +96,13 @@ h1{
 	margin: 0 auto;
 	.border();
   .header-wrapper {
-	width: 85%;
-	margin: 0 auto;
+	.width-margin();
 	display: flex;
 	flex-flow: column wrap;
 	border: 1px solid red;
 	} //closes header wrapper//
   nav {
-	width: 90%;
+	width: 100%;
 	padding: 10px;
 	margin: 0 5px 10px 0;
 	display: flex;
@@ -107,6 +110,7 @@ h1{
 	border: 1px solid green;
   a {
 	  text-decoration: none;
+	  padding: 10px;
   }
   } //closes nav //
   
@@ -116,5 +120,38 @@ h1{
 	@media(max-width:500px) {
 		width: 90%;
 	}
+	.middle-content {
+		.width-margin();
+		border: 1px solid blue;
+	}
+	.table {
+		.width-margin();
+	  th {
+		  .border();
+	  }
+	  tr {
+		.border();
+	  }
+	  td {
+		  .border();
+	  }
+	} //closes table
+	footer {
+		border: 1px solid yellow;
+		.width-margin();
+	  nav {
+		  justify-content: space-around;
+	  }	
+	  .updated {
+		  border: 1px solid blue;
+		  width: 50%;
+		  margin: 0 auto;
+		  display: flex;
+		 p {
+			 padding: 10px;
+			 margin: 0 auto;
+		 } 
+	  }
+	} //closes footer //
 }  //closes container//
 
